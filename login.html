@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #container{
+            width: 70%;
+            height:520px;
+            background-color: blueviolet;
+            margin: auto;
+            padding-top: 40px;
+        }
+        #loginbox{
+            text-align: center;
+            height: 430px;
+            width: 37%;
+            background-color: white;
+            padding-top: 50px;
+            border-radius: 2%;
+            margin: auto;
+        }
+        
+        input{
+            height: 30px;
+            width: 80%;
+            font-size: 15px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            border: none;
+        }
+        button 
+            {
+            height: 42px;
+            width: 80%;
+            font-size: 15px;
+            margin-top: 20px;
+            box-shadow: none;
+            color: white;
+            background-color: rgb(120, 17, 209);
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 1%;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+    <title>loginPage</title>
+</head>
+<body>
+    <div id="container">
+        <div id="loginbox">
+            <h1>Login</h1>
+            <input id="email" type="email" placeholder="Email"/>
+            <br>
+            <input id="password" type="password"  placeholder="Password"/>
+            <br>
+            <button>Submit</button>
+            <p>Forgot Password?</p>
+            <p>Don't have an account? Sign up</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    document.querySelector("button").addEventListener("click", myFunction);
+    function myFunction () {
+    let Email = document.querySelector("#email").value;
+    let Password = document.querySelector("#password").value;
+    console.log(Email, Password);
+    }
+</script>
